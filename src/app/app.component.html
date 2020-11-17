@@ -1,4 +1,15 @@
 <h2>Hello Angular World !!!</h2>
+
+<form #simpleForm="ngForm" (ngSubmit)="getValClick(simpleForm.value)">
+   <input type="text" name="user" ngModel placeholder="Enter user name" /> <br><br>
+   <input type="text" name="age" ngModel placeholder="Enter user age" /> <br><br>
+   <input type="text" name="address" ngModel placeholder="Enter user address" /> <br><br>
+   <input type="password" name="password" ngModel placeholder="Enter user password" /> <br><br>
+   <button>Get User values</button>
+</form>
+
+
+<!--
 <h4 *ngFor="let item of data">
 {{item}}
 </h4>
@@ -19,7 +30,6 @@
 </tr>
 </table>
 
-<!--
 <div [ngSwitch]="color">
     <h2 style="color:red;" *ngSwitchCase="'red'">
       Red color

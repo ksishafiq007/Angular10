@@ -12,6 +12,13 @@ export class AppComponent {
   name='ksi';
   myName='Shafiqul';
   color="green";
+  
+  getValClick(val)
+  {
+    console.warn(val)
+    
+  }
+
   data=['ksi','robin','paplu','lipi','mili']
 data2=[
   {
