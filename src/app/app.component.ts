@@ -11,7 +11,7 @@ export class AppComponent {
   show="green";
   name='ksi';
   myName='Shafiqul';
-  color="green";
+  color="blue";
   
   getValClick(val)
   {
